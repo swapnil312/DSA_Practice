@@ -44,6 +44,8 @@ DSA-Practice/
 ├── Greedy/
 ├── Graph/
 ├── DynamicProgramming/
+|
+├── Notes
 │
 └── README.md
 ```
@@ -59,14 +61,6 @@ For each problem, I try to maintain:
 * Space complexity
 * Important edge cases
 
-Example:
-
-```text
-Arrays/
-└── TwoSum/
-    ├── solution.cpp
-    └── README.md
-```
 
 ## 📊 Progress
 
