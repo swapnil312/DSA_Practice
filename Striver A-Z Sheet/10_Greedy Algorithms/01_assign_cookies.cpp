@@ -49,7 +49,7 @@ public:
         }
         return count;
     }
-    // Let m = size of greedy array and n = size of sizee array    
+    // Let m = size of greedy array and n = size of size array    
     // We can observe that while loop ends when any one of the arrays has 
     // finished traversal. Now we cannot tell anything about when will the
     // students array will finish its traversal since it depends upon how many 

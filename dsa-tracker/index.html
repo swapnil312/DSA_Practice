@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A local-first DSA problem solving progress tracker.">
+  <title>DSA Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark">λ</div>
+        <div>
+          <strong>DSA Tracker</strong>
+          <span>Local progress lab</span>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Main navigation">
+        <button class="nav-item active" data-view="dashboard"><span>▦</span> Dashboard</button>
+        <button class="nav-item" data-view="log"><span>◷</span> Daily Log</button>
+        <button class="nav-item" data-view="analytics"><span>⌁</span> Analytics</button>
+        <button class="nav-item" data-view="calendar"><span>□</span> Calendar</button>
+        <button class="nav-item" data-view="settings"><span>⚙</span> Settings</button>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="connection-card">
+          <div class="connection-top">
+            <span id="connection-dot" class="status-dot"></span>
+            <span id="connection-label">Not connected</span>
+          </div>
+          <small id="connection-detail">Using local fallback</small>
+          <button class="secondary-button full" id="connect-btn">📁 Connect folder</button>
+        </div>
+        <div class="sidebar-note">Your JSON file stays on your computer.</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="mobile-header">
+        <button class="icon-button" id="mobile-menu" aria-label="Open navigation">☰</button>
+        <div class="mobile-brand">λ DSA Tracker</div>
+        <button class="icon-button" id="mobile-connect" aria-label="Connect folder">📁</button>
+      </header>
+
+      <div id="app" class="content"></div>
+    </main>
+  </div>
+
+  <div id="toast-region" class="toast-region" aria-live="polite"></div>
+
+  <dialog id="confirm-dialog" class="dialog">
+    <div class="dialog-icon">!</div>
+    <h3 id="dialog-title">Are you sure?</h3>
+    <p id="dialog-message"></p>
+    <div class="dialog-actions">
+      <button class="secondary-button" id="dialog-cancel">Cancel</button>
+      <button class="danger-button" id="dialog-confirm">Delete</button>
+    </div>
+  </dialog>
+
+  <input id="import-file" type="file" accept=".json,application/json" hidden>
+
+  <script src="app.js"></script>
+</body>
+</html>
