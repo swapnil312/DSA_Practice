@@ -8,7 +8,17 @@
       "names": [
         "Lemonade Change"
       ],
-      "notes": "Greedy"
+      "notes": ""
+    },
+    "2026-10-04": {
+      "problems": 3,
+      "names": [
+        "Minimum Rotations to Dial a Number I (Sum)",
+        "Minimum Rotations to Dial a Number II (Prefix",
+        "Suffix)",
+        "Fractional Knapsack (Greedy)"
+      ],
+      "notes": ""
     }
   }
 }
