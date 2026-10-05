@@ -19,6 +19,14 @@
         "Fractional Knapsack (Greedy)"
       ],
       "notes": ""
+    },
+    "2026-10-05": {
+      "problems": 2,
+      "names": [
+        "Jump Game - 1",
+        "Job Sequencing Problem"
+      ],
+      "notes": ""
     }
   }
 }
